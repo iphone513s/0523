@@ -19,7 +19,7 @@ function setup() {
   video.size(width, height);
   video.hide();
 
-  facemesh = ml5.faceMesh(video, modelReady);
+  facemesh = ml5.facemesh(video, modelReady);
   facemesh.on('predict', gotResults);
 }
 
